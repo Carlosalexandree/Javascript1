@@ -1,3 +1,23 @@
+function verificarSomaParImpar(value) {
+
+  if (value % 2 === 0) {
+    return (value + ", Esse número é par" )
+  } else {
+    return(value + ", Esse número é Impar")
+  }
+}
+
+function verificarIgualDiferente(value1, value2){
+
+
+  if (value1 == value2){
+    return("O numero é igual")
+  }else{
+    return(" O numero é diferente")
+  }
+
+}
+
 let nome = prompt("Qua seu nome?")
 alert("Olá," + nome)
 
@@ -20,17 +40,12 @@ alert('Divisão ' + div)
 alert('Multiplicação ' + multi)
 alert('Resto da divisão ' + restoDiv)
 
-function verificarSomaParImpar(value) {
 
-  if (value % 2 === 0) {
-    return (value + ", Esse número é par" )
-  } else {
-    return(value + ", Esse número é Impar")
-  }
-}
 const resposta = verificarSomaParImpar(soma)
 alert(resposta)
 
-const resposta1 = verificarSomaParImpar(sub)
-alert(resposta1)
+
+const resposta2 = verificarIgualDiferente(firstNumber, secondNumber)
+alert(resposta2)
+
 
